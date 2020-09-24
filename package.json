@@ -1,0 +1,33 @@
+{
+  "name": "grpc-node",
+  "version": "1.0.0",
+  "description": "implementing remote procedure calls in node.js",
+  "main": "src/indes.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akshit8/gRPC-node.git"
+  },
+  "keywords": [
+    "gRPC",
+    "microscervices",
+    "go",
+    "proto",
+    "proto-buffer"
+  ],
+  "author": "Akshit Sadana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Akshit8/gRPC-node/issues"
+  },
+  "homepage": "https://github.com/Akshit8/gRPC-node#readme",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.5",
+    "express": "^4.17.1",
+    "grpc": "^1.24.3",
+    "hbs": "^4.1.1",
+    "uuid": "^8.3.0"
+  }
+}

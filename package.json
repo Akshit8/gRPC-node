@@ -4,7 +4,8 @@
   "description": "implementing remote procedure calls in node.js",
   "main": "src/indes.js",
   "scripts": {
-    "start": "node server/server.js"
+    "grpc": "node server/server.js",
+    "express": "node client/index.js"
   },
   "repository": {
     "type": "git",

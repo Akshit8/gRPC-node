@@ -61,6 +61,19 @@ app.post("/remove", (req, res) => {
     });
 });
 
+app.get('/auth/:token', (req, res) => {
+    const jwtToken = {
+        token: req.params.token
+    };
+    client.authenticate(jwtToken, (err, data) => {
+        if(err){
+            console.log(err);
+            return;
+        }
+        res.send(data);
+    })
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log("Server running at port %d", PORT);

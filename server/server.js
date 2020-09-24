@@ -86,6 +86,16 @@ server.addService(customersProto.CustomerService.service, {
                 details: "Not found"
             });
         }
+    },
+
+    authenticate: (call, callback) => {
+        console.log(call.request.token);
+        const requiredToken = '1234';
+        const response = call.request.token === requiredToken;
+        callback(null, {
+            success: response,
+            statusCode: '200'
+        });
     }
 });
 
